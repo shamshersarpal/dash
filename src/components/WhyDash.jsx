@@ -18,9 +18,9 @@ export default function WhyDash() {
         />
         <div className="max-w-screen-xl  mx-auto ">
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 ">
-            <div className="border-r-[#242424] border lg:py-[120px] pt-[80px] lg:border-b-0 border-b-[#242424]">
+            <div className="border-r-[#242424] border lg:py-[120px] lg:pt-[80px] pt-0 lg:border-b-0 border-b-[#242424]">
               <Image
-                className="w-full lg:max-w-[418px] max-w-[318px] mx-auto px-5 lg:px-0 border lg:border-0 border-r-[#242424] border-l-[#242424] "
+                className="w-full lg:max-w-[418px] max-w-[318px] mx-auto px-5 lg:px-0 border lg:border-0 border-r-[#242424] border-l-[#242424] lg:pt-0 pt-20"
                 src={whyus}
                 alt=""
               />
