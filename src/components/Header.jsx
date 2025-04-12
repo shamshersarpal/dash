@@ -39,19 +39,17 @@ export default function Header() {
         }`}
       >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a
-            href=" "
-            className="flex items-center space-x-3 rtl:space-x-reverse"
-          >
-            <Image
-              className="logo"
-              src={logo}
-              alt="Logo"
-              width={176}
-              height={47}
-            />
-          </a>
-
+          <Link href="/" passHref>
+            <span className="flex items-center space-x-3 rtl:space-x-reverse">
+              <Image
+                className="logo"
+                src={logo}
+                alt="Logo"
+                width={176}
+                height={47}
+              />
+            </span>
+          </Link>
           <div className="flex items-center gap-10">
             <div className="">
               <div
