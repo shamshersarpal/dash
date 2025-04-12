@@ -55,7 +55,7 @@ export default function BuyNow() {
       </div>
 
       <div className="text-center">
-        <button type="button" className="loginBtn mt-1">
+        <button type="button" className="loginBtn mt-1 h-[51px]">
           Add to Cart
         </button>
       </div>
