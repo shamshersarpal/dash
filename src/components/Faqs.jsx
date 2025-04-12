@@ -42,14 +42,20 @@ export default function Faqs() {
             alt=""
           />
           <div className="lg:text-center text-left">
-            <h2 className="text-white font-ws text-[47px] font-[500] mb-10">
+            <h2 className="text-white font-ws lg:text-[47px] font-[500] mb-10 text-[37px] leading-[1.2] lg:block hidden">
               Need<span className="text-[#ED0EEB] font-[900]"> Help</span> ?
+              Start Here
+            </h2>
+
+            <h2 className="text-white font-ws lg:text-[47px] font-[500] mb-10 text-[37px] leading-[1.2] lg:hidden block">
+              Need<span className="text-[#ED0EEB] font-[900]"> Help</span> ?{" "}
+              <br></br>
               Start Here
             </h2>
           </div>
           <div className="faq-container max-w-[905px]  mx-auto pb-20">
             <div className="faq-item active">
-              <button className="faq-question">What is included?</button>
+              <button className="faq-question pe-20">What is included?</button>
               <div className="faq-answer">
                 <p>
                   Each order contains a unique, weatherproof Remember Well Dash

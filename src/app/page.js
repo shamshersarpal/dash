@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection"; 
 import SaveMemories from "@/components/SaveMemories";
 import WhyDash from "@/components/WhyDash";
+import FourBoxes from "@/components/FourBoxes"
 import Image from "next/image";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
    <Header />
    <HeroSection/>
    <WhyDash/>
+    <FourBoxes/>
    <BestProducts/>
    <BuyNow/> 
    <SaveMemories/>

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import logo from "../images/logo.png";
 import cart from "../images/cart.svg";
+import Link from "next/link";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +32,7 @@ export default function Header() {
   return (
     <>
       <nav
-        className={`fixed top-0 w-full z-10 ${
+        className={`fixed top-0 w-full z-50 ${
           isScrolled
             ? "bg-[#080808] border rounded-b-[40px] navborder"
             : "bg-transparent"
@@ -61,59 +62,63 @@ export default function Header() {
               >
                 <ul className="flex flex-col p-4 md:p-0 font-[20px] md:space-x-8 rtl:space-x-reverse md:flex-row ">
                   <li>
-                    <a
-                      href="#"
-                      className={`block py-2 px-3 rounded-sm md:p-0 ${
-                        activeItem === "myAccount"
-                          ? "text-[#14F6FE]"
-                          : "hover:text-[#14F6FE] text-[#14F6FE]"
-                      }`}
-                      aria-current="page"
-                      onClick={() => handleItemClick("myAccount")}
-                    >
-                      Home
-                    </a>
+                    <Link href="/" passHref>
+                      <span
+                        className={`block py-2 px-3 rounded-sm md:p-0 ${
+                          activeItem === "myAccount"
+                            ? "text-[#14F6FE]"
+                            : "hover:text-[#14F6FE] text-[#14F6FE]"
+                        }`}
+                        aria-current="page"
+                        onClick={() => handleItemClick("myAccount")}
+                      >
+                        Home
+                      </span>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      className={`block py-2 px-3 rounded-sm md:p-0 ${
-                        activeItem === "travelAgents"
-                          ? "text-white"
-                          : "hover:text-[#14F6FE] text-white"
-                      }`}
-                      onClick={() => handleItemClick("travelAgents")}
-                    >
-                      Shop
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      className={`block py-2 px-3 rounded-sm md:p-0 ${
-                        activeItem === "travelAgents"
-                          ? "text-white"
-                          : "hover:text-[#14F6FE] text-white"
-                      }`}
-                      onClick={() => handleItemClick("travelAgents")}
-                    >
-                      About Us
-                    </a>
+                    <Link href=" " passHref>
+                      <span
+                        className={`block py-2 px-3 rounded-sm md:p-0 ${
+                          activeItem === "travelAgents"
+                            ? "text-white"
+                            : "hover:text-[#14F6FE] text-white"
+                        }`}
+                        onClick={() => handleItemClick("travelAgents")}
+                      >
+                        Shop
+                      </span>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
-                      href="#"
-                      className={`block py-2 px-3 rounded-sm md:p-0 ${
-                        activeItem === "travelAgents"
-                          ? "text-white"
-                          : "hover:text-[#14F6FE] text-white"
-                      }`}
-                      onClick={() => handleItemClick("travelAgents")}
-                    >
-                      Contact
-                    </a>
+                    <Link href=" " passHref>
+                      <span
+                        className={`block py-2 px-3 rounded-sm md:p-0 ${
+                          activeItem === "travelAgents"
+                            ? "text-white"
+                            : "hover:text-[#14F6FE] text-white"
+                        }`}
+                        onClick={() => handleItemClick("travelAgents")}
+                      >
+                        About Us
+                      </span>
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link href=" " passHref>
+                      <span
+                        className={`block py-2 px-3 rounded-sm md:p-0 ${
+                          activeItem === "travelAgents"
+                            ? "text-white"
+                            : "hover:text-[#14F6FE] text-white"
+                        }`}
+                        onClick={() => handleItemClick("travelAgents")}
+                      >
+                        Contact
+                      </span>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -197,9 +202,11 @@ export default function Header() {
                     </li>
                   </ul>
                 </div>
-                <button type="button" className="loginBtn">
-                  Login
-                </button>
+                <Link href="Login" passHref>
+                  <button type="button" className="loginBtn">
+                    Login
+                  </button>
+                </Link>
                 <button
                   data-collapse-toggle="navbar-sticky"
                   type="button"

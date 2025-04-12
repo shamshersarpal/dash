@@ -30,7 +30,7 @@ export default function Herosection() {
           </div>
 
           <div className="lg:hidden block text-center">
-            <h1 className="text-white text-[40px] font-[800] font-ws   text-center">
+            <h1 className="text-white text-[40px] font-[800] font-ws   text-center leading-[1.2]">
               Life stories on
             </h1>
             <h1 className="text-white text-[40px] font-[800] font-ws flex justify-center gap-2">

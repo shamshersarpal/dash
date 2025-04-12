@@ -9,8 +9,13 @@ export default function SaveMemories() {
   return (
     <>
       <div className="text-center pt-20 mb-10">
-        <h2 className="text-white font-ws text-[47px] font-[500]">
+        <h2 className="text-white font-ws lg:text-[47px] font-[500] text-[37px] leading-[1.2] lg:block hidden">
           Save Memories in{" "}
+          <span className="text-[#ED0EEB] font-[900]">3 Steps</span>
+        </h2>
+
+        <h2 className="text-white font-ws lg:text-[47px] font-[500] text-[37px] leading-[1.2] block lg:hidden">
+          Save Memories <br></br> in{" "}
           <span className="text-[#ED0EEB] font-[900]">3 Steps</span>
         </h2>
       </div>
@@ -39,12 +44,16 @@ export default function SaveMemories() {
 
             <div className="flex justify-center items-start py-20 border border-r-[#242424]">
               <div>
-                <Image className="h-[400px] relative left-[20px]" src={stepThree} alt="" />
+                <Image
+                  className="h-[400px] relative left-[20px]"
+                  src={stepThree}
+                  alt=""
+                />
                 <h3 className="text-[27px] font-[500] text-white text-center mt-5">
                   Memorial page is active
                 </h3>
               </div>
-              <Image   src={three} alt="" />
+              <Image src={three} alt="" />
             </div>
           </div>
         </div>
