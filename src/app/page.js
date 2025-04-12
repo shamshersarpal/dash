@@ -9,12 +9,13 @@ import SaveMemories from "@/components/SaveMemories";
 import WhyDash from "@/components/WhyDash";
 import FourBoxes from "@/components/FourBoxes"
 import Image from "next/image";
+import OwlCarousel from "@/components/owl";
 
 export default function Home() {
   return (
     <>
    <Header />
-   <HeroSection/>
+   <HeroSection/> 
    <WhyDash/>
     <FourBoxes/>
    <BestProducts/>

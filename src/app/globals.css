@@ -419,3 +419,25 @@ img.learmore {
   transform: translateY(1px);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
+
+button.owl-dot {
+  height: 20px;
+  width: 20px;
+  background: #242424 !important;
+ 
+  border: solid #fff 2px !important;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.owl-dots {
+  display: flex
+;
+  justify-content: center;
+  position: relative;
+  top: -41px;
+}
+button.owl-dot.active{
+  border-color: #ED0EEB !important;
+  background: #00ffff !important;
+}
